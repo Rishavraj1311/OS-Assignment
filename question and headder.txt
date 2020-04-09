@@ -4,3 +4,7 @@ from the user. For example, if 8 is passed as a parameter on the command line, t
 parent and child processes have their own copies of the data, it will be necessary for the child to output the sequence. Have the parent
 invoke the wait() call to wait for the child process to complete before exiting the program. Perform necessary error checking to ensure
 that a positive integer is passed on the command line.
+
+#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
