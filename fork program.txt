@@ -14,7 +14,7 @@ that a positive integer is passed on the command line.
    int k=0;
   pid_t pid;
         do        {
-            printf("postive value: \n"); 
+            printf("EnterThe Positive Value: \n"); 
             scanf("%d", &k);	
         }
  while (k <= 0);
@@ -23,7 +23,7 @@ that a positive integer is passed on the command line.
 
         if (pid == 0)
         {
-            printf("Child process....\n");
+            printf("Child Process....\n");
             printf("%d\n",k);
             while (k!=1)
             {
@@ -36,13 +36,13 @@ that a positive integer is passed on the command line.
                     k = 3 * (k) + 1;
                 }     printf("%d\n",k);
   }
-            printf("Child process is done.\n");
+            printf("Child Process Is Done.\n");
         }
         else
         {
-            printf("Parents is waiting on child process....\n");
+            printf("Parents Is Waiting On Child Process....\n");
             wait();
-            printf("Parent process is done.\n");
+            printf("Parent Process Is Done.\n");
         }
     return 0; 
 }
